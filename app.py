@@ -9,5 +9,8 @@ def seconds_since_epoch():
 
 @app.route("/")
 def seconds():
-    return seconds_since_epoch()
+    return str(seconds_since_epoch())
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
